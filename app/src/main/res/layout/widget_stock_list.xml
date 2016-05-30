@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#bbDEDFDE"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#aaDEDFDE"
+        android:drawableLeft="@mipmap/ic_launcher"
+        android:drawableStart="@mipmap/ic_launcher"
+        android:gravity="center_vertical"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/widget_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/stock_symbol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toLeftOf="@+id/pill_layout"
+        android:layout_toStartOf="@+id/pill_layout"
+        android:textSize="24sp"
+        tools:text="AAPL"/>
+
+    <LinearLayout
+        android:id="@+id/pill_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/stock_symbol"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/stock_symbol"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bid_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            tools:text="100.2"/>
+
+        <TextView
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/percent_change_pill"
+            android:textSize="12sp"
+            tools:text="-0.9%"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
